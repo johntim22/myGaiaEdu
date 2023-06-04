@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GAIA Education Registration System</title>
+<style>
+	body {
+		background-image: url("http://localhost/mygaiaedu.gr/admin_media/eurovision-eurovision-the-competition-wallpaper-d960a8cd71ca7d4b86b7d89fa021e6fd.jpg");
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		color: white;
+		background-attachment: fixed;
+	}
+	.box{
+		background: rgba( 255, 255, 255, 0.25 );
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+		backdrop-filter: blur( 4px );
+		-webkit-backdrop-filter: blur( 4px );
+		border-radius: 10px;
+		border: 1px solid rgba( 255, 255, 255, 0.18 );
+		margin: auto;
+		width: 50%;
+		padding: 10px;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h2>Gaia Education Registration System</h2>
+		<!---<h3>Σχολικό Έτος 2023-2024 "Από το σκοτάδι, στο φως"</h3>--->
+		<h3>Δεν υπάρχουν ενεργές αιτήσεις αυτή τη στιγμή.</h3> <!--Αναφορά περιόδου->
+		<br>
+		<!---<form onSubmit="#">
+		<fieldset>
+		<legend>Στοιχεία μαθητή</legend>
+		<label for="uname">Ονοματεπώνυμο μαθητή:</label>
+		<input id="uname" type="text" placeholder="Γιάννης Παπαδόπουλος" style="border-radius: 8px">
+		<label for="ucode">Κωδικός μαθητή:</label>
+		<input id="uname" type="number" placeholder="1234567890" style="border-radius: 8px"><br><br>
+		<label for="mumname">Όνομα μητέρας:</label>
+		<input id="mumname" type="text" placeholder="Μαρία" style="border-radius: 8px">
+		<label for="papname">Όνομα πατέρα:</label>
+		<input id="papname" type="text" placeholder="Δημήτρης" style="border-radius: 8px"><br><br>
+			<label for="birthplace">Τόπος γέννησης:</label>
+		<input id="birthplace" type="text" placeholder="Μαρούσι, Αττικής" style="border-radius: 8px">
+		</fieldset>
+		<br>
+		<fieldset>
+		<legend>Στοιχεία επικοινωνίας</legend>
+		<label for="telephone">Σταθερό Τηλέφωνο:</label>
+		<input id="telephone" type="number" placeholder="2105625075" style="border-radius: 8px">
+		<label for="mobile">Κινητό τηλέφωνο:</label>
+		<input id="mobile" type="number" placeholder="6936122321" style="border-radius: 8px"><br><br>
+		<label for="address">Διεύθυνση (Οδός/Αριθμός):</label>
+		<input id="address" type="text" placeholder="Ιθώμης 57" style="border-radius: 8px">
+		<label for="area">Περιοχή:</label>
+		<input id="area" type="text" placeholder="Αιγάλεω" style="border-radius: 8px"><br><br>
+			<label for="postc">Τ.Κ.:</label>
+		<input id="postc" type="number" placeholder="12345" style="border-radius: 8px">
+		<label for="email">E-mail:</label>
+		<input id="email" type="email" placeholder="user@example.com" style="border-radius: 8px"><br><br>
+		<input type="checkbox" id="checkbox1" onClick="checkall()">
+		<label for="checkbox1">Τα στοιχεία επικοινωνίας μου δεν έχουν αλλάξει</label>
+		</fieldset><br>
+		<fieldset>
+		<legend>Δήλωση μαθημάτων</legend>
+			<ol>
+			<li><input id="email" type="text" placeholder="Κωδικός μαθήματος" style="border-radius: 8px" required>
+				<input type="radio" name="rad1" id="rad1" required><label for="rad1">Απαίτηση προγράμματος</label>
+				<input type="radio" name="rad1" id="rad2"><label for="rad2">Μάθημα Επιλογής</label>
+				<input type="checkbox"><label>Επανάληψη</label></li>
+				<li><input id="email" type="text" placeholder="Κωδικός μαθήματος" style="border-radius: 8px">
+				<input type="radio" name="rad2" id="rad1"><label for="rad1">Απαίτηση προγράμματος</label>
+				<input type="radio" name="rad2" id="rad2"><label for="rad2">Μάθημα Επιλογής</label>
+				<input type="checkbox"><label>Επανάληψη</label></li>
+				<li><input id="email" type="text" placeholder="Κωδικός μαθήματος" style="border-radius: 8px">
+				<input type="radio" name="rad3" id="rad1"><label for="rad1">Απαίτηση προγράμματος</label>
+				<input type="radio" name="rad3" id="rad2"><label for="rad2">Μάθημα Επιλογής</label>
+				<input type="checkbox"><label>Επανάληψη</label></li>
+				<li><input id="email" type="text" placeholder="Κωδικός μαθήματος" style="border-radius: 8px">
+				<input type="radio" name="rad4" id="rad1"><label for="rad1">Απαίτηση προγράμματος</label>
+				<input type="radio" name="rad4" id="rad2"><label for="rad2">Μάθημα Επιλογής</label>
+				<input type="checkbox"><label>Επανάληψη</label></li>
+				<li><input id="email" type="text" placeholder="Κωδικός μαθήματος" style="border-radius: 8px">
+				<input type="radio" name="rad5" id="rad1"><label for="rad1">Απαίτηση προγράμματος</label>
+				<input type="radio" name="rad5" id="rad2"><label for="rad2">Μάθημα Επιλογής</label>
+				<input type="checkbox"><label>Επανάληψη</label></li>
+				<li style='text-align: left'>Αναγνώσματα Θερινής Περιόδου 2023</li>
+			</ol>
+			</fieldset><br>
+			<fieldset>
+			<legend>Ειδική δήλωση</legend>
+				<p>Για συμμετοχή σε πρόγραμμα προετοιμασίας Πανελλαδικών Εξετάσεων 2024, IB November Exams 2023, GCE/IAL October Exams 2023 και Πτυχία Ξένων Γλωσσών Δεκέμβριου 2023 δήλωση συμμετοχής <b>ΜΟΝΟ ΤΗΛΕΦΩΝΙΚΑ!</b></p>
+			</fieldset>
+			<input type="submit" value="Υποβολή">
+			<input type="reset" value="Καθαρισμός" onClick="clearall();">
+		</form>--->
+	</div>
+	<script>
+	function checkall(){
+		var check1 = document.getElementById("checkbox1");
+	if (check1.checked = true){
+		document.getElementById("telephone").disabled=true;
+			document.getElementById("mobile").disabled=true;
+			document.getElementById("address").disabled=true;
+			document.getElementById("area").disabled=true;
+		document.getElementById("postc").disabled=true;
+		document.getElementById("email").disabled=true;
+		
+	} 
+	}
+		function clearall(){
+		document.getElementById("telephone").disabled=false;
+			document.getElementById("mobile").disabled=false;
+			document.getElementById("address").disabled=false;
+			document.getElementById("area").disabled=false;
+		document.getElementById("postc").disabled=false;
+		document.getElementById("email").disabled=false;
+	}
+	</script>
+</body>
+</html>
